@@ -26,25 +26,43 @@ class Color{
 int main() {
     //DECLARATIONS
     Color c1, c2, c3, c4, c5;
-    c1.setRed(1);
-    c1.setGreen(1);
-    c1.setBlue(1);
 
-    c2.setRed(1);
-    c2.setGreen(1);
-    c2.setBlue(1);
+    //Set color values
+    c1.setRed(51);
+    c1.setGreen(115);
+    c1.setBlue(87);
 
-    c3.setRed(1);
-    c3.setGreen(1);
-    c3.setBlue(1);
+    c2.setRed(109);
+    c2.setGreen(159);
+    c2.setBlue(113);
 
-    c4.setRed(1);
-    c4.setGreen(1);
-    c4.setBlue(1);
+    c3.setRed(255);
+    c3.setGreen(209);
+    c3.setBlue(220);
 
-    c5.setRed(1);
-    c5.setGreen(1);
-    c5.setBlue(1);
+    c4.setRed(234);
+    c4.setGreen(154);
+    c4.setBlue(178);
+
+    c5.setRed(255);
+    c5.setGreen(254);
+    c5.setBlue(227);
+
+    cout << "RGB Values for color #1: ";
+    c1.print();
+
+    cout << "RGB Values for color #2: ";
+    c2.print();
+
+    cout << "RGB Values for color #3: ";
+    c3.print();
+
+    cout << "RGB Values for color #4: ";
+    c4.print();
+
+    cout << "RGB Values for color #5: ";
+    c5.print();
+
 
     return 0;
 }
