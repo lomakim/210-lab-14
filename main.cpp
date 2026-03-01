@@ -10,17 +10,17 @@ class Color{
     int red, green, blue;
 
     public:
-    //MUTATORS
+    //MUTATORS - set values of each member variable
     void setRed(int r) { red = r; }
     void setGreen(int g) { green = g; }
     void setBlue(int b) { blue = b; }
 
-    //ACCESSORS
+    //ACCESSORS - access values of each member value
     int getRed() const { return red; }
     int getGreen() const { return green; }
     int getBlue() const { return blue; }
 
-    void print() const;
+    void print() const;     //print function prototype
 };
 
 int main() {
@@ -48,8 +48,10 @@ int main() {
     c5.setGreen(254);
     c5.setBlue(227);
 
+    //Print banner
     cout << "**** COLOR CLASS PROGRAM ****" << endl;
 
+    //Print RGB values for each color using print function
     cout << "\nRGB Values for color #1: " << endl;
     c1.print();
 
@@ -69,6 +71,7 @@ int main() {
     return 0;
 }
 
+//Print function prints out the values of the color class neatly formatted
 void Color::print() const {
     cout << left << "Red:   " << setw(WIDTH) << red;
     cout << "Green: " << setw(WIDTH) << green;
