@@ -3,7 +3,7 @@
 #include <iomanip>
 using namespace std;
 
-const int WIDTH = 8;
+const int WIDTH = 6;
 
 class Color{
     private:
@@ -48,19 +48,21 @@ int main() {
     c5.setGreen(254);
     c5.setBlue(227);
 
-    cout << "RGB Values for color #1: ";
+    cout << "**** COLOR CLASS PROGRAM ****" << endl;
+
+    cout << "\nRGB Values for color #1: " << endl;
     c1.print();
 
-    cout << "RGB Values for color #2: ";
+    cout << "\nRGB Values for color #2: " << endl;
     c2.print();
 
-    cout << "RGB Values for color #3: ";
+    cout << "\nRGB Values for color #3: " << endl;
     c3.print();
 
-    cout << "RGB Values for color #4: ";
+    cout << "\nRGB Values for color #4: " << endl;
     c4.print();
 
-    cout << "RGB Values for color #5: ";
+    cout << "\nRGB Values for color #5: " << endl;
     c5.print();
 
 
@@ -68,7 +70,7 @@ int main() {
 }
 
 void Color::print() const {
-    cout << setw(WIDTH) << "Red: " << red;
-    cout << setw(WIDTH) << "Green: " << green;
-    cout << setw(WIDTH) << "Blue: " << blue << endl;
+    cout << left << "Red:   " << setw(WIDTH) << red;
+    cout << "Green: " << setw(WIDTH) << green;
+    cout << "Blue:  " << setw(WIDTH) << blue << endl;
 }
